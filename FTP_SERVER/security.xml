@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<SECURITY Description="Quick 'n Easy FTP Server Security" >
+	<IPRANGE>127.0.0.1 127.0.0.1</IPRANGE>
+</SECURITY>
