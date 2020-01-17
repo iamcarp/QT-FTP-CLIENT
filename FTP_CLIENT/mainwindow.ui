@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>964</width>
-    <height>549</height>
+    <width>1002</width>
+    <height>525</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -47,8 +47,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>9</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -59,7 +59,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 9pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 11pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -97,7 +97,10 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(230, 230, 250);
+ border: 10px;
+font: 10pt &quot;Arial&quot;;
+color:black;</string>
     </property>
     <property name="text">
      <string>ftp://127.0.0.1</string>
@@ -117,8 +120,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -129,7 +132,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 11pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -167,7 +170,13 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(230, 230, 250);
+ border: 10px;
+font: 10pt &quot;Arial&quot;;
+color:black;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
     </property>
     <property name="text">
      <string>luka</string>
@@ -187,8 +196,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -199,7 +208,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 11pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -215,6 +224,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_password">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -225,6 +237,8 @@
     </property>
     <property name="font">
      <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -233,6 +247,12 @@
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 250);
+ border: 10px;
+font: 10pt &quot;Arial&quot;;
+color:black;</string>
     </property>
     <property name="text">
      <string>rtrk</string>
@@ -247,24 +267,28 @@
    <widget class="QProgressBar" name="progressBar">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>60</y>
+      <x>220</x>
+      <y>210</y>
       <width>481</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <weight>75</weight>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Bauhaus 93</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">font: 11pt &quot;Bauhaus 93&quot;;
+background-color:white;
+color:white;</string>
     </property>
     <property name="value">
      <number>24</number>
@@ -273,23 +297,29 @@
    <widget class="QPushButton" name="Btn_upload">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>360</y>
-      <width>111</width>
-      <height>41</height>
+      <x>630</x>
+      <y>80</y>
+      <width>151</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(00,66,99);
+ border: 10px;
+font: 10pt &quot;Bauhaus 93&quot;;
+color:white;</string>
     </property>
     <property name="text">
      <string>UPLOAD</string>
@@ -301,16 +331,16 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>60</y>
+      <x>950</x>
+      <y>20</y>
       <width>91</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>6</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -321,7 +351,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 6pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -351,16 +381,16 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>30</y>
+      <x>950</x>
+      <y>40</y>
       <width>91</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>6</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -371,7 +401,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 6pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -398,7 +428,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>720</x>
+      <x>870</x>
       <y>0</y>
       <width>231</width>
       <height>30</height>
@@ -406,8 +436,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>6</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -418,7 +448,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 6pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -445,23 +475,29 @@
    <widget class="QPushButton" name="Btn_disconnect">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>250</y>
+      <x>820</x>
+      <y>200</y>
       <width>171</width>
       <height>91</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(47, 79, 79);
+ border: 10px;
+font: 10pt &quot;Bauhaus 93&quot;;
+color:white;</string>
     </property>
     <property name="text">
      <string>QUIT</string>
@@ -470,23 +506,29 @@
    <widget class="QPushButton" name="Btn_download">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>360</y>
+      <x>610</x>
+      <y>320</y>
       <width>180</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(46, 139, 87);
+ border: 10px;
+font: 10pt &quot;Bauhaus 93&quot;;
+color:white;</string>
     </property>
     <property name="text">
      <string>DOWNLOAD MP3</string>
@@ -495,16 +537,16 @@
    <widget class="QLabel" name="label_ftp_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>300</y>
-      <width>171</width>
+      <x>260</x>
+      <y>30</y>
+      <width>361</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>9</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -515,7 +557,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 9pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -527,23 +569,22 @@
      <number>1</number>
     </property>
     <property name="text">
-     <string>UPLOAD FILE  FROM 
-CLIENT TO SERVER</string>
+     <string>UPLOAD FILE  FROM CLIENT TO SERVER</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_ftp_3">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>300</y>
-      <width>171</width>
+      <x>240</x>
+      <y>270</y>
+      <width>351</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>9</pointsize>
+      <family>Bauhaus 93</family>
+      <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -554,7 +595,7 @@ CLIENT TO SERVER</string>
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 9pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -566,30 +607,35 @@ CLIENT TO SERVER</string>
      <number>1</number>
     </property>
     <property name="text">
-     <string>DOWNLOAD FILE FROM 
- SERVER TO CLIENT</string>
+     <string>DOWNLOAD FILE FROM SERVER TO CLIENT</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Btn_download_2">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>400</y>
+      <x>610</x>
+      <y>360</y>
       <width>180</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(46, 139, 87);
+ border: 10px;
+font: 10pt &quot;Bauhaus 93&quot;;
+color:white;</string>
     </property>
     <property name="text">
      <string>DOWNLOAD TXT</string>
@@ -598,23 +644,29 @@ CLIENT TO SERVER</string>
    <widget class="QPushButton" name="Btn_download_3">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>440</y>
+      <x>610</x>
+      <y>400</y>
       <width>180</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">background-color: rgb(46, 139, 87);
+ border: 10px;
+font: 10pt &quot;Bauhaus 93&quot;;
+color:white;</string>
     </property>
     <property name="text">
      <string>DOWNLOAD JPG</string>
@@ -623,23 +675,26 @@ CLIENT TO SERVER</string>
    <widget class="QPushButton" name="Btn_clear">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>230</y>
-      <width>201</width>
+      <x>210</x>
+      <y>380</y>
+      <width>211</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="text">
      <string>CLEAR CLIENT
@@ -649,75 +704,89 @@ CLIENT TO SERVER</string>
    <widget class="QPushButton" name="Btn_clear_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>230</y>
-      <width>141</width>
+      <x>220</x>
+      <y>140</y>
+      <width>201</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="text">
      <string>CLEAR SERVER
-DIRECTORY</string>
+ RECEIVE DIRECTORY</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Btn_server_dir">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>150</y>
-      <width>141</width>
+      <x>420</x>
+      <y>320</y>
+      <width>171</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
+      <kerning>true</kerning>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="text">
      <string>VIEW SERVER
-DIRECTORY</string>
+ SEND DIRECTORY</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Brn_client_receive">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>150</y>
-      <width>191</width>
+      <x>210</x>
+      <y>320</y>
+      <width>211</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;
+</string>
     </property>
     <property name="text">
      <string>VIEW CLIENT
@@ -727,27 +796,65 @@ DIRECTORY</string>
    <widget class="QPushButton" name="Btn_client_send">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>150</y>
+      <x>420</x>
+      <y>80</y>
       <width>161</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
+      <family>Bauhaus 93</family>
       <pointsize>10</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
     </property>
     <property name="text">
      <string>VIEW CLIENT
  SEND DIRECTORY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_server_dir_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>201</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bauhaus 93</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Bauhaus 93&quot;;</string>
+    </property>
+    <property name="text">
+     <string>VIEW SERVER
+ RECEIVE DIRECTORY</string>
     </property>
    </widget>
   </widget>
@@ -756,7 +863,7 @@ DIRECTORY</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>964</width>
+     <width>1002</width>
      <height>26</height>
     </rect>
    </property>

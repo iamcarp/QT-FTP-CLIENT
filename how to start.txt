@@ -1,0 +1,8 @@
+u FTP_SERVER pokrenuti ftpserver
+ako izbacuje gresku da fali ftptrace znaci da je zauzet socket pa restartuj racunar
+u gornjem levom uglu ima start i to pokrece server da radi
+potom se kreira novi user (menage user account)
+ZA OVAJ ZADATAK REZERVISI PORT 21 JER JE ON ZA FTP KOMUNIKACIJU
+
+otvori qt i izaberi pro iz foldera FTP_CLIENT
+ostatak ide lakse

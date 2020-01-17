@@ -33,13 +33,18 @@ public slots:
 
 private slots:
     void on_Btn_upload_clicked();
+
     void on_Btn_disconnect_clicked();
+
     void on_Btn_download_clicked();
     void on_Btn_download_2_clicked();
     void on_Btn_download_3_clicked();
+
     void on_Btn_clear_clicked();
     void on_Btn_clear_2_clicked();
+
     void on_Btn_server_dir_clicked();
+    void on_Btn_server_dir_2_clicked();
     void on_Btn_client_send_clicked();
     void on_Brn_client_receive_clicked();
 

@@ -45,7 +45,12 @@ void MainWindow::on_Btn_upload_clicked()
                            //QNetworkReply klasa sadrzi odgovore na  QNetworkAccessManager klasu
                             connect(reply, SIGNAL(uploadProgress(qint64 ,qint64)), this, SLOT(loadProgress(qint64 ,qint64)));
                        }
+                         QMessageBox::information(NULL, tr(""), "UPLOAD IS DONE");
                 }
+            else
+            {
+                QMessageBox::critical(NULL, tr(""), "UPLOAD IS CANCELED");
+            }
         }
 }
 
