@@ -15,14 +15,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+        clear.cpp \
+        download.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        openDir.cpp \
+        quit.cpp \
+        upload.cpp
 
 HEADERS += \
-        clear.h \
-        download.h \
-        mainwindow.h \
-        upload.h
+        mainwindow.h
 
 FORMS += \
         mainwindow.ui

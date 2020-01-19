@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "download.h"
-#include "upload.h"
-#include "clear.h"
+#include "download.cpp"
+#include "upload.cpp"
+#include "clear.cpp"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,14 +20,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-/***********************************************************************************************
-initFTP
-***********************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
 bool MainWindow::initFTP()
 {
 
-    // static StandardButton critical(QWidget *parent, const QString &title,
-    //const QString &text, StandardButtons buttons = Ok,StandardButton defaultButton = NoButton);
     if (ui->lineEdit_ftp->text().isEmpty())
         {
             QMessageBox::critical(NULL, tr("Error"), "URL address CANNOT BE EMPTY");
@@ -84,32 +82,27 @@ bool MainWindow::initFTP()
         }
 
 }
-
-/***********************************************************************************************
-replyFinished
-nema erora:brise, azurira i zatvara
-ima erora: ispise ih
-***********************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
 void MainWindow::replyFinished(QNetworkReply*)
 //class Q_NETWORK_EXPORT QNetworkReply: public QIODevice
+// deo QNetworkAccessManager koji omogucava da apk aslje req i prima poruke
 {
     if (reply->error() == QNetworkReply::NoError)
         {
             reply->deleteLater();                                   //  void deleteLater();
-            file->flush();                                          //  bool flush();
+            file->flush();                                          //  bool flush();   ispira
             file->close();                                          //  virtual void close() override;
         }
      else
         {
-            QMessageBox::critical(NULL, tr("Error"), "ERROR!!!");  //static StandardButton critical(QWidget *parent, const QString &title,const QString &text);
+            QMessageBox::critical(NULL, tr("Error"), "ERROR!!!");
         }
 }
-
-/***********************************************************************************************
-loadProgress
-azuriranje trake
-qint64 umesto long long
-***********************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
 void MainWindow::loadProgress(qint64 bytesSent, qint64 bytesTotal)
 {
     ui->progressBar->setMaximum(bytesTotal);
@@ -119,59 +112,16 @@ void MainWindow::loadProgress(qint64 bytesSent, qint64 bytesTotal)
     ui->progressBar->setFormat(QString::fromUtf8("%1%").arg(QString::number(currentProgress, 'f', 1)));
     ui->progressBar->clearMask();
 }
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
 
-/***********************************************************************************************
-getFileName
-preuzmi nazif fajla preko putanje
-***********************************************************************************************/
-QString MainWindow::getFileName(QString m_filePath)
-{
-    QString temp;
-    QString fileName;
-    int count = -1;
-    fileName = m_filePath;
-    for(int i = 0; temp != "/"; i++)
-    {
-        temp = fileName.right(1);
-        fileName.chop(1);
-        count++;
-    }
-    fileName = m_filePath.right(count);
-
-    return fileName;
-}
-
-/***********************************************************************************************
-replyError
-***********************************************************************************************/
 void MainWindow::replyError()
 {
     QString errStr = "error";
     QMessageBox::critical(NULL, tr("Error"), QString(errStr));
 }
 
-void MainWindow::on_Btn_disconnect_clicked()
-{
-    QMessageBox::StandardButton reply;
-       reply = QMessageBox::question(this, tr(""),"REALLY WANT TO QUIT?", QMessageBox::Yes | QMessageBox::No );
-
-       if (reply == QMessageBox::Yes)
-       {
-            exit (EXIT_SUCCESS);
-       }
-  }
 
 
-void MainWindow::on_Btn_server_dir_clicked(){
-   if (initFTP())  QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open File"), "../FTP_SERVER/SERVER_FILES/SEND");
-}
-void MainWindow::on_Btn_server_dir_2_clicked(){
-   if (initFTP())  QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open File"), "../FTP_SERVER/SERVER_FILES");
-}
-void MainWindow::on_Btn_client_send_clicked(){
-   if (initFTP())  QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open File"),"../FTP_CLIENT/CLIENT_FILES/SEND/");
-}
-void MainWindow::on_Brn_client_receive_clicked(){
-   if (initFTP())   QStringList fileNames = QFileDialog::getOpenFileNames(this, tr("Open File"),"../FTP_CLIENT/CLIENT_FILES/RECEIVE/");
-}
 
